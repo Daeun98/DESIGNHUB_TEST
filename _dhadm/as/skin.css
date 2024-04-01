@@ -1,0 +1,215 @@
+/* Skin 설정페이지 */
+.skin-list {overflow:hidden;}
+.skin-list li {float:left; margin-right:15px;}
+.skin-thumb {display:inline-block; width:14px; height:14px; vertical-align:middle; margin-left:5px;}
+.skin-thumb.indigo {background:#395467; }
+.skin-thumb.mint {background:#1bbe93; }
+.skin-thumb.green {background:#69A142; }
+.skin-thumb.orange {background:#FF993D; }
+.skin-thumb.indipink {background:#D57878; }
+
+/* 
+	SKIN : INDIGO (default)
+	#1d3446/#395467(standard)/#768d9d/#abb9c2/#dde2e5/#eaeff2/#f7faf9
+*/
+/* layout and common */
+.skin-indigo #header {background:#395467;}
+.skin-indigo #title {background:#1d3446; color:#DDE2E5;}
+.skin-indigo #title a {color:#DBE6E4;}
+.skin-indigo #side {border-right:1px solid #768d9d;}
+.skin-indigo #footer {border-top:1px solid #768d9d;}
+.skin-indigo #gnb a {color:#EDF1F5;}
+.skin-indigo #gnb .on a {color:#fff;}
+.skin-indigo #profile .nav a:hover {background:#F7FAF9;}
+.skin-indigo #snb {border-top:1px solid #888;}
+.skin-indigo #snb .on > a {color:#202020; background-color:#DBE6E4;}
+.skin-indigo #snb a:hover {color:#202020;}
+/* dashboard */
+.skin-indigo .dashboard h3 {border-left:5px solid #00559C;}
+/* admin table */
+.skin-indigo .adm-wrap h4 {border-left:5px solid #00559C;}
+.skin-indigo .list-adding {background:#F7FAF9; color:#7b7b7b;}
+.skin-indigo .list-adding a {color:#7b7b7b;}
+.skin-indigo .list-adding .on {color:#09569C;}
+.skin-indigo .adm-table {border-top:2px solid #395467;}
+.skin-indigo .adm-table .selected th, .skin-indigo .adm-table .selected td { background:#F7FAF9;}
+/* admin box */
+.skin-indigo .primary-box {border-top:2px solid #395467;}
+.skin-indigo .tint-box {background:#eef4f7;}
+.skin-indigo .border-box {border:1px solid #dde2e5; }
+/* form and button */
+.skin-indigo .adm-table input[type="file"] + label {color:#fff;	background:#768d9d;}
+.skin-indigo .btn-ok {background:#3b4156 !important;}
+.skin-indigo .btn-cancel {background:#aaa !important;}
+.skin-indigo .btn-alert {background:#CC6262 !important;}
+.skin-indigo .btn-clear {background:#fff !important; color:#5b5b5b !important; border:1px solid #999 !important;}
+.skin-indigo .btn-etc {background:#768d9d !important;}
+/* etc */
+.skin-indigo .anchor-toggle-list a.on {	color:#000;	background:#dde2e5; }
+.skin-indigo .adm-category em.on { background-color:#395467; }
+
+
+/*	
+	SKIN : MINT 
+	#008461/#1bbe93(standard)/#43b9aa
+*/
+/* layout and common */
+.skin-mint #header {background:#009985;}
+.skin-mint #title {background:#00695b; color:#DDE2E5;}
+.skin-mint #title a {color:#DBE6E4;}
+.skin-mint #side {border-right:1px solid #43b9aa;}
+.skin-mint #footer {border-top:1px solid #43b9aa;}
+.skin-mint #gnb a {color:#EDF1F5;}
+.skin-mint #gnb .on a {color:#fff;}
+.skin-mint #profile .nav a:hover {background:#F7FAF9;}
+.skin-mint #snb {border-top:1px solid #43b9aa;}
+.skin-mint #snb .on > a {color:#202020; background-color:#EBF6F5;}
+.skin-mint #snb a:hover {color:#202020;}
+/* dashboard */
+.skin-mint .dashboard h3 {border-left:5px solid #1bbe93;}
+/* admin table */
+.skin-mint .adm-wrap h4 {border-left:5px solid #1bbe93;}
+.skin-mint .list-adding {background:#EBF6F5; color:#7b7b7b;}
+.skin-mint .list-adding a {color:#7b7b7b;}
+.skin-mint .list-adding .on {color:#008461;}
+.skin-mint .adm-table {border-top:2px solid #009985;}
+.skin-mint .adm-table .selected th, .skin-mint .adm-table .selected td { background:#F9FDFC;}
+/* admin box */
+.skin-mint .primary-box {border-top:2px solid #009985;}
+.skin-mint .tint-box {background:#eef4f7;}
+.skin-mint .border-box {border:1px solid #dde2e5; }
+/* form and button */
+.skin-mint .adm-table input[type="file"] + label {color:#fff; background:#43b9aa;}
+.skin-mint .btn-ok {background:#016f61 !important;}
+.skin-mint .btn-cancel {background:#aaa !important;}
+.skin-mint .btn-alert {background:#CC6262 !important;}
+.skin-mint .btn-clear {background:#fff !important; color:#5b5b5b !important; border:1px solid #aaa !important;}
+.skin-mint .btn-etc {background:#43b9aa !important;}
+/* etc */
+.skin-mint .anchor-toggle-list a.on {	color:#000;	background:#DBECEA; }
+.skin-mint .adm-category em.on { background-color:#009985; }
+
+
+/* 
+	SKIN : GREEN
+	#66AC35(standard)
+*/
+/* layout and common */
+.skin-green #header {background:#66AC35;}
+.skin-green #title {background:#418D0C; color:#C1DBB0;}
+.skin-green #title a {color:#C1DBB0;}
+.skin-green #side {border-right:1px solid #AEBCA4;}
+.skin-green #footer {border-top:1px solid #AEBCA4;}
+.skin-green #gnb a {color:#D4E9C5;}
+.skin-green #gnb .on a {color:#fff;}
+.skin-green #profile .nav a:hover {background:#F7FAF9;}
+.skin-green #snb {border-top:1px solid #AEBCA4;}
+.skin-green #snb .on > a {color:#202020; background-color:#EBF6E3;}
+.skin-green #snb a:hover {color:#202020;}
+/* dashboard */
+.skin-green .dashboard h3 {border-left:5px solid #66AC35;}
+/* admin table */
+.skin-green .adm-wrap h4 {border-left:5px solid #66AC35;}
+.skin-green .list-adding {background:#EEF8E7; color:#7b7b7b;}
+.skin-green .list-adding a {color:#7b7b7b;}
+.skin-green .list-adding .on {color:#418D0C;}
+.skin-green .adm-table {border-top:2px solid #418D0C;}
+.skin-green .adm-table .selected th, .skin-green .adm-table .selected td { background:#F8FFF3;}
+/* admin box */
+.skin-green .primary-box {border-top:2px solid #2C4919;}
+.skin-green .tint-box {background:#E6F1DD;}
+.skin-green .border-box {border:1px solid #DAEACE; }
+/* form and button */
+.skin-green .adm-table input[type="file"] + label {color:#fff;	background:#A0AC98;}
+.skin-green .btn-ok {background:#275F00 !important;}
+.skin-green .btn-cancel {background:#aaa !important;}
+.skin-green .btn-alert {background:#BB9D61 !important;}
+.skin-green .btn-clear {background:#fff !important; color:#5b5b5b !important; border:1px solid #999 !important;}
+.skin-green .btn-etc {background:#A0AC98 !important;}
+/* etc */
+.skin-green .anchor-toggle-list a.on {	color:#000;	background:#DAEACE; }
+.skin-green .adm-category em.on { background-color:#66AC35; }
+
+
+/* 
+	SKIN : ORANGE
+	#EB810D(default)
+*/
+/* layout and common */
+.skin-orange #header {background:#EB810D;}
+.skin-orange #title {background:#BC6200; color:#fff;}
+.skin-orange #title a {color:#fff;}
+.skin-orange #side {border-right:1px solid #C0B1A1;}
+.skin-orange #footer {border-top:1px solid #C0B1A1;}
+.skin-orange #gnb a {color:#FFECD7;}
+.skin-orange #gnb .on a {color:#fff;}
+.skin-orange #profile .nav a:hover {background:#F7FAF9;}
+.skin-orange #snb {border-top:1px solid #C0B1A1;}
+.skin-orange #snb .on > a {color:#202020; background-color:#F4F2EC;}
+.skin-orange #snb a:hover {color:#202020;}
+/* dashboard */
+.skin-orange .dashboard h3 {border-left:5px solid #EB810D;}
+/* admin table */
+.skin-orange .adm-wrap h4 {border-left:5px solid #EB810D;}
+.skin-orange .list-adding {background:#F4F2EC; color:#545454;}
+.skin-orange .list-adding a {color:#7b7b7b;}
+.skin-orange .list-adding .on {color:#894700;}
+.skin-orange .adm-table {border-top:2px solid #6E6E6E;}
+.skin-orange .adm-table .selected th, .skin-orange .adm-table .selected td { background:#FFFBF7;}
+/* admin box */
+.skin-orange .primary-box {border-top:2px solid #6E6E6E;}
+.skin-orange .tint-box {background:#FAF0E6;}
+.skin-orange .border-box {border:1px solid #EDDDCA; }
+/* form and button */
+.skin-orange .adm-table input[type="file"] + label {color:#fff;	background:#AEA69C;}
+.skin-orange .btn-ok {background:#534637 !important;}
+.skin-orange .btn-cancel {background:#aaa !important;}
+.skin-orange .btn-alert {background:#983333 !important;}
+.skin-orange .btn-clear {background:#fff !important; color:#5b5b5b !important; border:1px solid #999 !important;}
+.skin-orange .btn-etc {background:#AEA69C !important;}
+/* etc */
+.skin-orange .anchor-toggle-list a.on {	color:#000;	background:#dde2e5; }
+.skin-orange .adm-category em.on { background-color:#EB810D; }
+
+
+/* 
+	SKIN : PINK
+	#D57878(default)
+*/
+/* layout and common */
+.skin-indipink #header {background:#D57878;}
+.skin-indipink #title {background:#A75353; color:#fff;}
+.skin-indipink #title a {color:#fff;}
+.skin-indipink #side {border-right:1px solid #CAAEAE;}
+.skin-indipink #footer {border-top:1px solid #CAAEAE;}
+.skin-indipink #content {background:#F4F2EC;}
+.skin-indipink #gnb a {color:#FFEDED;}
+.skin-indipink #gnb .on a {color:#fff;}
+.skin-indipink #profile .nav a:hover {background:#F7FAF9;}
+.skin-indipink #snb {border-top:1px solid #CAAEAE;}
+.skin-indipink #snb .on > a {color:#202020; background-color:#F4F3F3;}
+.skin-indipink #snb a:hover {color:#202020;}
+/* dashboard */
+.skin-indipink .dashboard h3 {border-left:5px solid #EB810D;}
+/* admin table */
+.skin-indipink .adm-wrap h4 {border-left:5px solid #EB810D;}
+.skin-indipink .list-adding {background:#F6F3F3; color:#545454;}
+.skin-indipink .list-adding a {color:#7b7b7b;}
+.skin-indipink .list-adding .on {color:#894700;}
+.skin-indipink .adm-table {border-top:2px solid #6E6E6E;}
+.skin-indipink .adm-table .selected th, .skin-indipink .adm-table .selected td { background:#FAFAFA;}
+/* admin box */
+.skin-indipink .primary-box {border-top:2px solid #6E6E6E;}
+.skin-indipink .tint-box {background:#F1E5E5;}
+.skin-indipink .border-box {border:1px solid #E1D5D5; }
+/* form and button */
+.skin-indipink .adm-table input[type="file"] + label {color:#fff; background:#ccc;}
+.skin-indipink .btn-ok {background:#A94F4F !important;}
+.skin-indipink .btn-cancel {background:#aaa !important;}
+.skin-indipink .btn-alert {background:#768D9D !important;}
+.skin-indipink .btn-clear {background:#fff !important; color:#5b5b5b !important; border:1px solid #999 !important;}
+.skin-indipink .btn-etc {background:#ccc !important;}
+/* etc */
+.skin-indipink .anchor-toggle-list a.on {	color:#000;	background:#E8E8E8; }
+.skin-indipink .adm-category em.on { background-color:#D57878; }
+

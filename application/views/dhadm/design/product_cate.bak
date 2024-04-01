@@ -1,0 +1,227 @@
+<? 
+	include($_SERVER['DOCUMENT_ROOT']."/_dhadm/include/head.php");
+
+	$Category="product";
+	$PageName="product_add";
+	include($_SERVER['DOCUMENT_ROOT']."/_dhadm/include/header.php");
+?>
+
+	<!--Container-->
+	<div id="container">
+		<?	include($_SERVER['DOCUMENT_ROOT']."/_dhadm/include/left_side.php"); ?>
+
+		<!-- Content -->
+		<div id="content">
+			<!-- inner -->
+			<div class="inner adm-wrap">
+				<div class="adm-title">
+					<h2>카테고리 관리</h2>
+					<p class="page-path opensans"><a href="main.php">HOME</a> &gt; 제품관리 &gt; 카테고리 관리</p>
+				</div>
+
+				<!-- 기본정보 -->				
+				<div class="float-wrap">
+					<!-- 카테고리 관리 -->
+					<div class="float-l" style="width:40%;">
+						<div class="float-wrap">
+							<h3 class="icon-cate float-l">카테고리 관리</h3>
+							<p class="float-r">
+								<input type="button" value="대분류 추가" class="btn-ok">
+							</p>
+						</div>
+						<div class="adm-category-box">
+							<!--	* li 클래스 설정
+										1. 각 ul의 마지막 li에 class="last" 추가
+									* span 항목 클래스 설정 
+										1. 선택된 span : on
+										2. 하위 카테고리가 있는 span : parent
+							-->
+							<ul class="adm-category">
+								<li class="parent"><span class="bullet open"></span>
+									<em class="on">새 카테고리</em><input type="button" value="항목추가">
+									<ul>
+										<li><span class="bullet"></span><em>카테고리명</em><input type="button" value="항목추가"></li>
+										<li><span class="bullet"></span><em>카테고리명</em><input type="button" value="항목추가"></li>
+										<li class="last"><span class="bullet"></span><em>카테고리명</em><input type="button" value="항목추가"></li>
+									</ul>
+								</li>
+								<li class="parent"><span class="bullet"></span>
+									<em>1차 카테고리</em><input type="button" value="항목추가">
+									<ul>
+										<li><span class="bullet"></span><em>2차 카테고리</em><input type="button" value="항목추가"></li>
+										<li class="parent"><span class="bullet"></span><em>2차 카테고리</em><input type="button" value="항목추가">
+											<ul>
+												<li><span class="bullet"></span><em>3차 카테고리</em><input type="button" value="항목추가"></li>
+												<li><span class="bullet"></span><em>3차 카테고리</em><input type="button" value="항목추가"></li>
+												<li class="last"><span class="bullet"></span>
+													<em>하위 카테고리 있음</em><input type="button" value="항목추가">
+													<ul>
+														<li><span class="bullet"></span><em>4차 카테고리</em></li>
+														<li><span class="bullet"></span><em>4차 카테고리</em></li>
+														<li class="last"><span class="bullet"></span><em>4차 카테고리</em></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="last"><span class="bullet"></span><em>2차 카테고리</em><input type="button" value="항목추가"></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div><!-- END 카테고리 관리 -->
+
+					<!-- 카테고리 설정 -->
+					<div class="float-r" style="width:56%">
+						<h3 class="icon-pen">카테고리 상세설정</h3>
+						<table class="adm-table">
+							<caption>카테고리 수정</caption>
+							<colgroup>
+								<col style="width:120px;">								
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>상위 카테고리</th>
+									<td>없음</td>
+								</tr>
+								<tr>
+									<th>분류 URL</th>
+									<td>test.co.kr/product/brand.php?cate_no=99</td>
+								</tr>
+								<tr>
+									<th>카테고리 이름</th>
+									<td><input type="text"></td>
+								</tr>
+								<tr>
+									<th>타이틀 이미지</th>
+									<td>
+										<div class="float-wrap">
+											<p class="file" style="width:200px;">
+												<input type="file" id="prod_thumb" /><label for="prod_thumb" class="btn-file">파일찾기</label>
+												<span class="file-name">선택한 파일이 없습니다.</span>
+											</p>
+											<p class="float-l">권장사이즈 : 800 * 200 px</p>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th>추가 이미지</th>
+									<td>
+										<div class="float-wrap">
+											<p class="file" style="width:200px;">
+												<input type="file" id="prod_thumb" /><label for="prod_thumb" class="btn-file">파일찾기</label>
+												<span class="file-name">선택한 파일이 없습니다.</span>
+											</p>
+											<p class="float-l">권장사이즈 : 800 * 120 px</p>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div><!-- END 카테고리 설정 -->
+				</div>
+
+				<!-- 제품정보 -->
+				<h3 class="icon-pen">제품 정보<span class="toggle-btn on"></span></h3>
+				<table class="adm-table mb70">
+					<caption>제품정보를 입력하는 폼</caption>
+					<colgroup>
+						<col style="width:15%;">
+						<col style="width:35%;">
+						<col style="width:15%;"><col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>제품명</th>
+							<td><input type="text" class="width-xl"></td>
+							<th>제품코드</th>
+							<td><input type="text" class="width-m"></td>
+						</tr>
+						<tr>
+							<th>제조사</th>
+							<td><input type="text" class="width-xl"></td>
+							<th>원산지</th>
+							<td><input type="text" class="width-xl"></td>
+						</tr>
+						<tr>
+							<th>추가항목1</th>
+							<td><input type="text" class="width-xl"></td>
+							<th>추가항목2</th>
+							<td><input type="text" class="width-xl"></td>
+						</tr>
+						<tr>
+							<th>추가항목3</th>
+							<td><input type="text" class="width-xl"></td>
+							<th>추가항목4</th>
+							<td><input type="text" class="width-xl"></td>
+						</tr>
+						<tr>
+							<th>제품요약설명<br>(줄바꿈 자동 적용)</th>
+							<td colspan="3"><textarea name="" cols="30" rows="3"></textarea></td>
+						</tr>
+						<tr>
+							<th>제품목록 썸네일</th>
+							<td colspan="3">
+								<div class="float-wrap">
+									<p class="file">
+										<input type="file" id="prod_thumb" /><label for="prod_thumb" class="btn-file">파일찾기</label>
+										<span class="file-name">선택한 파일이 없습니다.</span>
+									</p>
+									<p class="float-l">권장사이즈 : 240 * 240 px</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>상세보기1</th>
+							<td colspan="3">
+								<div class="float-wrap">
+									<p class="file">
+										<input type="file" id="photo1" /><label for="photo1" class="btn-file">파일찾기</label>
+										<span class="file-name">filename.jpg</span>
+									</p>
+									<p class="float-l">권장사이즈 : 800 * 680 px</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>상세보기2</th>
+							<td colspan="3">
+								<div class="float-wrap">
+									<p class="file">
+										<input type="file" id="photo2" /><label for="photo2" class="btn-file">파일찾기</label>
+										<span class="file-name">선택한 파일이 없습니다.</span>
+									</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th>상세보기3</th>
+							<td colspan="3">
+								<div class="float-wrap">
+									<p class="file">
+										<input type="file" id="photo3" /><label for="photo3" class="btn-file">파일찾기</label>
+										<span class="file-name">선택한 파일이 없습니다.</span>
+									</p>
+									<p class="float-l">
+										<button type="button" style="vertical-align:top;" class="btn-clear">이미지 추가</button>
+									</p>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="4" class="plain">
+								<div>
+									에디터가 들어갑니다.
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- END 제품정보 -->
+
+				<p class="align-c mt40"><input type="button" class="btn-ok btn-xl" value="등록하기"></p>
+
+			</div><!-- END inner -->
+		</div><!-- END Content -->
+	</div><!--END Container-->
+
+<? include($_SERVER['DOCUMENT_ROOT']."/_dhadm/include/footer.php"); ?>

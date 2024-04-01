@@ -1,0 +1,651 @@
+@charset "utf-8";
+
+/* 최초 배포일 : 2015.05.28. By Wookju */
+/* 최종 수정일 : 2015.12.08. By Wookju */
+
+/* Layout */
+.board-wrap {}
+.align-c {text-align:center !important;}
+.align-l {text-align:left !important;}
+.align-r {text-align:right !important;}
+.float-wrap {overflow:hidden;}
+.float-r {float:right;}
+.float-l {float:left;}
+.board-wrap th {
+	font-weight:600;
+	color:#000;
+	font-size:0.85em;
+	text-align:center;
+}
+/* Width of List Items */
+.board-wrap .w05 {width:5%;}
+.board-wrap .w10 {width:10%;}
+.board-wrap .w15 {width:15%;}
+.board-wrap .w20 {width:20%;}
+.board-wrap .w25 {width:25%;}
+.board-wrap .w30 {width:30%;}
+.board-wrap .w35 {width:35%;}
+.board-wrap .w40 {width:40%;}
+.board-wrap .w45 {width:45%;}
+.board-wrap .w50 {width:50%;}
+.board-wrap .w55 {width:55%;}
+.board-wrap .w60 {width:60%;}
+.board-wrap .w65 {width:65%;}
+.board-wrap .w70 {width:70%;}
+.board-wrap .w75 {width:75%;}
+.board-wrap .w80 {width:80%;}
+.board-wrap .w85 {width:85%;}
+.board-wrap .w90 {width:90%;}
+.board-wrap .w95 {width:95%;}
+.board-wrap .w100 {display:block; clear:both;}
+
+/* Margin of List Items */
+.board-wrap .ml1 {margin-left:1px;}
+
+/* Border of List Items */
+.board-wrap .bt1 { border-top-width:1px; }
+.board-wrap .bt0 { border-top:0; }
+.board-wrap .bb0 { border-bottom:0; }
+
+/* Common Attributes */
+.board-wrap img {
+	vertical-align:middle;
+	max-width:100%;
+}
+.board-wrap input[type="text"],
+.board-wrap input[type="password"] {
+	border:1px solid #ccc;
+	height:28px; line-height:28px;
+	padding:0 5px;
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-o-oppearance:none;
+	border-radius:0;
+}
+.board-wrap select {
+	border-radius:0;
+	height:30px; line-height:30px;
+	padding-left:5px;
+}
+
+/* Button */
+.btn-normal a {
+	display:block;
+	height:30px; line-height:30px;
+	padding:0 20px;
+	background:#333;
+	color:#fff;
+	letter-spacing:-0.03em;
+}
+.btn-inline a {
+	display:inline-block;
+	height:30px; line-height:30px;
+	padding:0 20px;
+	background:#444;
+	color:#fff;
+	vertical-align:middle;
+	letter-spacing:-0.03em;
+}
+.btn-fixed a {
+	width:70px;
+	text-align:center;
+}
+.btn-tinted-01 a { background:#3b4156; } /* normal : blue */
+.btn-tinted-02 a { background:#a6a6a6; } /* normal : light grey */
+
+/* Board List */
+.board-list {
+	border-top:2px solid #333;
+	text-align:center;
+}
+.board-list .cmt-cnt {
+	font-size:0.85em;
+	color:#ff3300;
+	font-weight:600;
+	margin-left:3px;
+}
+.board-list .file img {
+	margin:0 1px;
+}
+.board-list .reply .title a {
+	padding-left:30px; 
+	background:url("../image/board_img/re.gif") no-repeat 18px top;
+}
+/* Board List - table */
+table.board-list {
+	width:100%;
+}
+.board-list th {
+	padding:12px 0;
+	border-bottom:1px solid #888;
+	background:url("../image/board_img/line_bg.gif") no-repeat left center;
+}
+.board-list th:first-child {
+	background-image:none;
+}
+.board-list td {
+	padding:10px 0;
+	border-bottom:1px solid #ccc;
+}
+.board-list .title {
+	text-align:left;
+}
+.board-list .notice td {
+	background:#f8f8f8;
+}
+.board-list .notice .title {
+	font-weight:600;
+}
+.board-list a {
+	margin-left:5px;
+}
+/* Board View */
+.board-view .board-content {
+	padding:20px 2.5%;
+	min-height:200px;
+	line-height:1.5em;
+}
+.board-view .file a {
+	margin:0 5px;
+}
+.board-view .file a:first-child {
+	margin-left:0;
+}
+
+/* Board View - table */
+table.board-view {
+	width:100%;
+	border-top:2px solid #333;
+	text-align:left;
+	table-layout:fixed;
+}
+.board-view th {
+	padding-top:1px;
+}
+.board-view th,
+.board-view td {
+	/* white-space: nowrap; */
+	white-space:normal;
+	padding:12px 0;
+	border-bottom:1px solid #ccc;
+}
+/* Comment */
+.comment-view {
+	background:#f5f5f5;
+}
+.comment-view > li {
+	overflow:hidden;
+	padding:8px 3% 8px 3%;
+	border-bottom:1px solid #ddd;
+	border-top:1px solid #fff;
+}
+.comment-view li > p {
+	float:left;
+	padding:5px 0;
+}
+.comment-view p {
+	font-size:0.9em;
+}
+.comment-view .name {
+	font-weight:600;
+	color:#222;
+}
+.comment-view .cmt {
+	padding:3px 0;
+}
+.comment-view .date {
+	color:#aaa;
+	font-size:0.925em;
+}
+.comment-view .edit a {
+	margin-left:5px;
+	font-size:0.925em;
+}
+.comment-cmt {
+	width:100%;
+	padding-top:10px;
+	clear:both;
+}
+.comment-cmt > li {
+	overflow:hidden;
+	padding:8px 0 8px 3%;
+	border-top:1px dotted #bbb;
+	background:url("../image/board_img/re.gif") no-repeat 1% 13px;
+}
+/* Comment Write */
+.comment-write {
+	padding:15px 3% 15px 3%;
+	overflow:hidden;
+	/* background:#f5f5f5; */
+	border-bottom:1px solid #aaa;
+}
+.comment-view .comment-write {
+	padding-right:0;
+	padding-left:3%;
+	padding-bottom:7px;
+	border-bottom:0;
+}
+.comment-write li {
+	float:left;
+	font-size:0.9em;
+}
+.comment-write .name p {
+	float:none;
+	overflow:hidden;
+	padding:0;
+}
+.comment-write .name label {
+	display:block;
+	float:left;
+	font-weight:600;
+}
+.comment-write .name span {
+	display:block;
+	float:left;
+}
+.comment-write .submit a {
+	display:block; 
+	height:49px; line-height:49px;
+	text-align:center;
+	overflow:hidden;
+	background:#555;
+	color:#fff;
+}
+.comment-write input[type="text"],
+.comment-write input[type="password"] {
+	height:20px;
+	line-height:20px;
+	padding:0 2%;
+	width:90%;
+}
+.comment-write textarea {
+	width:97%; height:43px;
+	padding:2px 0.5%;
+	resize:none;
+	overflow:auto;
+	border:1px solid #ccc;
+}
+/* Prev/Next */
+table.board-nav {
+	width:100%;
+	border-top:1px solid #333;
+	border-bottom:1px solid #333;
+}
+.board-nav tr:first-child {
+	border-bottom:1px solid #ddd;
+}
+.board-nav th,
+.board-nav td {
+	padding:10px 0;
+}
+
+/* Pager */
+.list-pager span {
+	/* margin:0 5px; */
+}
+.list-pager a {
+	display:inline-block;
+	width:25px; height:25px;
+	line-height:25px;
+	color:#888;
+	font-size:0.9em;
+	border:1px solid #ddd;
+}
+.list-pager img {
+	vertical-align:middle;
+	margin-top:-1px;
+	*margin-top:8px;
+	*vertical-align:text-top;
+}
+.list-pager span a.on,
+.list-pager span a:hover.on  {
+	font-weight:800;
+	background:#666;
+	border-color:#666;
+	color:#fff;
+}
+.list-pager span a:hover {
+	background:#f0f0f0;
+}
+
+/* Board Write */
+.board-write .file {
+	float:left;
+}
+.board-write .file li {
+	position:relative;
+	height:25px; line-height:25px;
+	margin-top:5px;
+	font-size:0.9em;
+	background:#f0f0f0;
+	padding-left:5px;
+}
+.board-write .file li:first-child {
+	margin-top:0;
+}
+.board-write .file input[type="file"] {
+	position:absolute;
+	right:0; top:1px;
+	width:75px; height:25px;
+	opacity:0;
+	filter:alpha(opacity=0);
+	-ms-filter:alpha("opacity=0");
+}
+.board-write .file .btn-file {
+	position:absolute;
+	right:0; top:0px;
+	width:75px; height:25px;
+	line-height:25px;
+	text-align:center;
+	background:#333;
+	color:#fff;
+	font-size:0.9em;
+	border-left:5px solid #fff;
+}
+.board-write .add-file-btn {
+	display:block;
+	float:left;
+	margin-left:10px;
+	padding:0 7px;
+	height:23px; line-height:23px;
+	cursor:pointer;
+	border:1px solid #ddd;
+	font-size:0.9em;
+}
+.board-write .spam-txt {
+	color:#ff0000;
+	font-size:0.9em;
+	letter-spacing:0.05em;
+}
+.board-write .write-form input[type="text"],
+.board-write .write-form input[type="password"] {
+	width:95%;
+}
+.board-write .write-form textarea {
+	width:95.7%; height:200px;
+	overflow:auto;
+	resize:none;
+	border:1px solid #ccc;
+}
+/* board write - table */
+table.board-write {
+	width:100%;
+	border-top:2px solid #333;
+}
+.board-write th,
+.board-write td {
+	padding:8px 0;
+	border-bottom:1px solid #ddd;
+}
+/* event board */
+.board-event li {
+	border:1px solid #ccc;
+	padding:15px;
+	overflow:hidden;
+	position:relative;
+	line-height:1.5em;
+	margin-bottom:15px;
+}
+.board-event .image {
+	float:left;
+}
+.board-event .image img {
+	width:150px;
+	height:100px;
+}
+.board-event .txt {
+	float:left;
+	padding-left:10px;
+}
+.board-event h4 {
+	font-weight:600;
+	font-size:1.125em;
+	margin-bottom:5px;
+	margin-top:2px;
+}
+.board-event .date {
+	color:#888;
+	font-size:0.85em;
+	margin-bottom:10px;
+}
+.board-event .status {
+	position:absolute;
+	right:15px; bottom:15px;
+	font-size:0.85em;
+	padding:3px 8px;
+}
+.board-event .status.end {
+	background:#999;
+	color:#fff;
+}
+.board-event .status.ing {
+	background:#cd0000;
+	color:#fff;
+}
+.board-event a {
+	color:#4b4b4b;
+}
+/* online form */
+.online-qna {
+	width:100%;
+	overflow:hidden;
+	text-align:left;
+}
+.agree,
+.info-text,
+.txa-01 {
+	width:735px;
+	padding:15px;
+}
+.contact-title {
+	color:#222;
+	font-size:1.1em;
+	font-weight:600;
+	background:url("http://designhub.kr/image/icon_pen.png") no-repeat left center;
+	padding-left:24px;
+	margin-bottom:10px;
+}
+.agree {
+	height:150px;
+	line-height:20px;
+	margin:0 0 10px;
+	border:1px solid #d3d3d3;
+	overflow-y:scroll;
+}
+.agree1 {
+	height:25px;
+	margin:0 0 30px;
+	border-bottom:1px solid #eee;
+}
+.info-text {
+	overflow:hidden;
+	margin:0 0 30px;
+	border:1px solid #d3d3d3;
+	clear:both;
+} 
+.info-text dt {
+	width:13%;
+	height:29px;
+	line-height:29px;
+	margin-bottom:6px;
+	float:left;
+}
+.sup-tit {
+	color:#888;
+	padding-top:3px;
+	font-size:12px;
+	font-weight:600;
+	margin-right:8px;
+	width:100px;
+}
+.sup-tit02 {
+	color:#888;
+	padding-top:3px;
+	font-size:11px;
+	font-weight:600;
+	margin-right:8px;
+	width:250px;
+}
+.info-text dd {
+	width:36%;
+	height:29px;
+	margin-bottom:6px;
+	float:left;
+}
+.in-01 {
+	width:92%;
+	height:16px;
+	padding:5px 2px;
+	font-size:12px;
+	margin:right:10px;
+	border:1px solid #d3d3d3;
+	background-attachment:scroll;
+	background:#eee;
+}
+.in-02 {
+	width:92%;
+	height:16px;
+	padding:5px 2px;
+	font-size:12px;
+	margin-right:10px;
+	border:1px solid #d3d3d3;
+	background-attachment:scroll;
+	background:#eee;
+}
+.in-03 {
+	width:27%;
+	height:16px;
+	padding:5px 2px;
+	font-size:12px;
+	margin-right:2px;
+	border:1px solid #d3d3d3;
+	background:#eee;
+}
+.list-style01 {
+	width:72px;
+	height:28px;
+	font-size:12px;
+	border:1px solid #d3d3d3;
+	background:#eee;
+}
+.list-style02 {
+	width:230px;
+	height:22px;
+	font-size:12px;
+	border:1px solid #d3d3d3;
+	background:#eee;
+	margin-right:10px;
+}
+.txa-01 {
+	height:130px;
+	line-height:18px;
+	margin:0 0 25px;
+	border:1px solid #d3d3d3;
+	overflow-y:scroll;
+	resize:none;
+}
+.online-btn-ok {
+	width:110px;
+	height:35px; 
+	background:#002167; color:#fff;
+	border:0;
+	font-weight:600;
+}
+.online-btn-cancel {
+	width:110px;
+	height:35px; 
+	background:#a6a6a6; color:#fff;
+	border:0;
+}
+
+/* 비밀번호 확인(추가:15.05.29) */
+.confm-pw {
+	width:180px;
+	margin:80px auto;
+	padding:20px;
+	border:5px solid #ddd;
+}
+.confm-pw label {
+	font-weight:600;
+}
+
+/* 수정 15.10.23 */
+.confm-pw input[type="password"] {
+	width:130px;
+}
+
+/* FAQ List (추가:15.06.08) */
+.faq-list .head {
+	padding:12px 0;
+	text-align:center;
+	color:#000;
+	border-bottom:1px solid #888;
+	border-top:2px solid #333;
+	font-size:0.85em;
+	font-weight:600;
+}
+.faq-q {
+	padding:10px 0 10px 40px;
+	background:url("../image/board_img/icon_q.png") no-repeat 5px center;
+	border-bottom:1px solid #ddd;
+	cursor:pointer;
+}
+.faq-a {
+	margin-top:10px;
+	padding-left:40px;
+	padding-bottom:10px;
+	background:url("../image/board_img/icon_a.png") no-repeat 5px 5px;
+	border-bottom:1px solid #ddd;
+	display:none;
+}
+.reply .title a {
+	padding-left:30px; 
+	background:url("../image/board_img/re.gif") no-repeat 18px top;
+}
+
+.title {
+	text-align:left;
+}
+
+/* 카테고리 */
+.cate_table .on{
+	font-weight:bold;
+}
+
+.tmp_list { width:100%; }
+.tmp_list td {
+	padding:20px 0;
+	text-align:center;
+	border:1px solid #ccc;
+	font-weight:600;
+	line-height:2em;
+}
+.tmp_list em {
+	display:block;
+	font-size:50px;
+	line-height:1.4em;
+	color:#666;
+}
+.viewOn td em {
+	font-weight:bold;
+	line-height:3em;
+}
+
+.tmp_view { width:99%; border:1px solid #ddd; }
+.tmp_view th {
+	border:0px;
+	padding:8px;
+	margin:5px;
+	background-color:#fafafa;
+}
+.tmp_view td {
+	border:0px;
+	padding:8px;
+	text-align:left;
+}
+.tmp_view em {
+	font-weight:bold;
+	font-size:12px;
+	line-height:0.2em;
+}
